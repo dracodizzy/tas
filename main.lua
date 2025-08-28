@@ -18,6 +18,7 @@ local Connections = loadModule("connections")
 local TASCreator  = loadModule("tascreator")
 local AutoPlay    = loadModule("autoplay")
 local Misc        = loadModule("misc")
+local Extra       = loadModule("extra")
 
 -- Wire modules together
 AutoPlay:SetReplayModule(Replay)
@@ -35,3 +36,4 @@ game:GetService("RunService").Heartbeat:Connect(function()
     Connections.InputEndedQueue = {}
     AutoPlay:Step()
 end)
+
